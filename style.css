@@ -14,6 +14,13 @@ html {
     conic-gradient(from   60deg at calc(200%/3) 50%,var(--c1)  60deg,var(--c3) var(--_g)),
     conic-gradient(from  -60deg at 50% calc(100%/3),var(--c1) 120deg,var(--c2) 0 240deg,var(--c3) 0);
   background-size: calc(var(--s)*sqrt(3)) var(--s);
+    margin: 0;
+  padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 /* --- 1. CUADRO NEGRO COMPLETO ARRIBA (De lado a lado, sin espacios) --- */
