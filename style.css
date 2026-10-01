@@ -1,20 +1,19 @@
 body {
-    /* Fondo base negro azulado muy oscuro */
+    /* Fondo base negro azulado oscuro */
     background-color: #0b0c10;
 
-    /* Patrón de bloques 3D seguro usando linear-gradients */
+    /* Patrón geométrico 3D simplificado y ultra compatible */
     background-image: 
-        linear-gradient(30deg, #1f2833 12%, transparent 12.5%, transparent 87%, #1f2833 87.5%, #1f2833),
-        linear-gradient(150deg, #1f2833 12%, transparent 12.5%, transparent 87%, #1f2833 87.5%, #1f2833),
-        linear-gradient(30deg, #1f2833 12%, transparent 12.5%, transparent 87%, #1f2833 87.5%, #1f2833),
-        linear-gradient(150deg, #1f2833 12%, transparent 12.5%, transparent 87%, #1f2833 87.5%, #1f2833),
-        linear-gradient(60deg, #2b3a4a 25%, transparent 25.5%, transparent 75%, #2b3a4a 75.5%, #2b3a4a),
-        linear-gradient(60deg, #2b3a4a 25%, transparent 25.5%, transparent 75%, #2b3a4a 75.5%, #2b3a4a);
+        linear-gradient(135deg, #1f2833 25%, transparent 25%), 
+        linear-gradient(225deg, #1f2833 25%, transparent 25%), 
+        linear-gradient(45deg, #1f2833 25%, transparent 25%), 
+        linear-gradient(315deg, #1f2833 25%, #0b0c10 25%);
     
-    background-size: 40px 70px;
-    background-position: 0 0, 0 0, 20px 35px, 20px 35px, 0 0, 20px 35px;
+    /* Tamaño del patrón de rombos */
+    background-size: 40px 40px;
+    background-position: 20px 0, 20px 0, 0 0, 0 0;
 
-    /* Estilos del texto para que no se pierdan en el fondo */
+    /* Estilos del texto para que no se pierdan */
     color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
