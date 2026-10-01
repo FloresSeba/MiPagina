@@ -30,3 +30,14 @@ html {
 .bloque-derecho {
     flex: 1; /* Ocupa de forma inteligente el resto de la pantalla */
 }
+/* --- DISEÑO DEL RECUADRO SUPERIOR --- */
+.recuadro-superior {
+    background-color: rgba(12, 5, 25, 0.9); /* Fondo oscuro semitransparente a juego con tu paleta morada */
+    border: 2px solid #b494ff; /* Borde neón morado igual a tus cubos */
+    border-radius: 14px; /* Esquinas suavizadas */
+    max-width: 1200px; /* Mismo ancho máximo que el contenedor de abajo */
+    margin: 0 auto 30px auto; /* Centrado y con separación de 30px hacia abajo */
+    padding: 20px; /* Altura interna adaptada al tamaño del texto */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); /* Sombra para que flote sobre el fondo */
+    text-align: center; /* Centra los elementos que vayan adentro */
+}
