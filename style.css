@@ -1,21 +1,17 @@
-body {
-    /* Fondo base: la cara más oscura del cubo (Negro Azulado Profundo) */
-    background-color: #0b0c10;
-
-    /* Estructura matemática exacta de los cubos 3D de Temani Afif */
-    background-image:
-        conic-gradient(from 120deg at 50% 25%, #2b3a4a 0 120deg, transparent 0),
-        conic-gradient(from -60deg at 50% 75%, #2b3a4a 0 120deg, transparent 0),
-        conic-gradient(from 60deg at 25% 56.25%, #1f2833 0 120deg, transparent 0),
-        conic-gradient(from -120deg at 75% 56.25%, #1f2833 0 120deg, transparent 0),
-        conic-gradient(from 0deg at 50% 37.5%, #1c232d 0 60deg, #11161d 0 120deg, transparent 0);
-    
-    /* Tamaño de los cubos: ajusta la escala tridimensional */
-    background-size: 60px 104px;
-
-    /* Tipografía y márgenes base */
-    color: #ffffff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 20px;
+html {
+  --s: 84px; /* control the size*/
+  --c1: #b494ff;
+  --c2: #000000;
+  --c3: #1c0552;
+  
+  --_g: 0 120deg,#0000 0;
+  background:
+    conic-gradient(             at calc(250%/3) calc(100%/3),var(--c3) var(--_g)),
+    conic-gradient(from -120deg at calc( 50%/3) calc(100%/3),var(--c2) var(--_g)),
+    conic-gradient(from  120deg at calc(100%/3) calc(250%/3),var(--c1) var(--_g)),
+    conic-gradient(from  120deg at calc(200%/3) calc(250%/3),var(--c1) var(--_g)),
+    conic-gradient(from -180deg at calc(100%/3) 50%,var(--c2)  60deg,var(--c1) var(--_g)),
+    conic-gradient(from   60deg at calc(200%/3) 50%,var(--c1)  60deg,var(--c3) var(--_g)),
+    conic-gradient(from  -60deg at 50% calc(100%/3),var(--c1) 120deg,var(--c2) 0 240deg,var(--c3) 0);
+  background-size: calc(var(--s)*sqrt(3)) var(--s);
 }
