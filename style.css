@@ -1,19 +1,21 @@
-body{
-    /* Fondo base negro azulado muy oscuro */
+body {
+    /* Color de fondo base (azul oscuro) */
     background-color: #0b0c10;
 
-    /* Patrón de Cubos 3D de Temani Afif adaptado a colores oscuros gaming */
+    /* Patrón de cubos tridimensionales corregido para el navegador */
     background-image:
-        conic-gradient(from  120deg at 50% 25%  ,#2b3a4a 0 120deg,#0000 0),
-        conic-gradient(from  -60deg at 50% 75%  ,#2b3a4a 0 120deg,#0000 0),
-        conic-gradient(from   60deg at 25% 56.25%,#1f2833 0 120deg,#0000 0),
-        conic-gradient(from  -120deg at 75% 56.25%,#1f2833 0 120deg,#0000 0),
-        conic-gradient(from    0deg at 50% 37.5% ,#151b24 0  60deg,#10141b 0 120deg,#0000 0);
-    background-size: 60px 104px; /* Ajusta el tamaño de los cubos 3D */
+        conic-gradient(from 120deg at 50% 25%, #2b3a4a 0deg 120deg, transparent 0deg),
+        conic-gradient(from -60deg at 50% 75%, #2b3a4a 0deg 120deg, transparent 0deg),
+        conic-gradient(from 60deg at 25% 56.25%, #1f2833 0deg 120deg, transparent 0deg),
+        conic-gradient(from -120deg at 75% 56.25%, #1f2833 0deg 120deg, transparent 0deg),
+        conic-gradient(from 0deg at 50% 37.5%, #151b24 0deg 60deg, #10141b 0deg 120deg, transparent 0deg);
+    
+    /* Tamaño de los cubos (puedes subirlo a 80px 138px si los quieres más grandes) */
+    background-size: 60px 104px; 
 
-    /* Configuración de letras para que contrasten en el fondo oscuro */
+    /* Estilos para el texto */
     color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 20px;
-}   
+}
