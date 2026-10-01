@@ -31,56 +31,104 @@ body {
     margin: 0;
     padding: 0;
 }
+/* --- CUARTO PASO: REDISTRIBUCIÓN DE LOS 3 CUADROS DE TEXTO --- */
 
-/* --- 2. CUADRO GRANDE DE ABAJO (Contenedor de los demás cuadros) --- */
-.contenedor-principal-abajo {
-    background-color: rgba(28, 5, 82, 0.4); /* Fondo morado oscuro semitransparente */
-    border: 2px solid #b494ff;
-    border-radius: 12px;
-    max-width: 900px;
-    margin: 40px auto; /* Centrado en la pantalla con espacio arriba/abajo */
-    padding: 20px; /* Margen interno general de la caja grande */
-    box-sizing: border-box;
-}
-
-/* --- CUADRO DEL TÍTULO INTERNO --- */
-.cuadro-titulo-interno {
-    background-color: #1c0552; /* Fondo del recuadro del título */
+/* 1. Primer Cuadro: Nombre y Apellido */
+.cuadro-nombre-completo {
+    background-color: rgba(28, 5, 82, 0.6);
     border: 1px solid #b494ff;
     border-radius: 6px;
-    
-    /* 5px de separación entre este cuadro y el cuadro grande de fondo */
-    margin: 5px; 
-    
-    /* 5px de separación entre el cuadro del título y el texto de adentro */
-    padding: 5px; 
-    
+    margin: 15px 5px;
+    padding: 12px;
     text-align: center;
-}
-
-/* El texto estilo párrafo dentro del cuadro del título */
-.texto-parrafo-titulo {
     color: #ffffff;
     font-size: 18px;
-    margin: 0; /* Respetamos los 5px exactos del contenedor */
-    font-weight: normal;
+}
+/* --- ALINEACIÓN DE LOS CUADROS (CUARTO PASO) --- */
+
+/* 1. Cuadro del Título: Centrado en el medio */
+.cuadro-titulo-interno {
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 1px solid #b494ff;
+    border-radius: 6px;
+    margin: 5px; 
+    padding: 10px; 
+    text-align: center; /* Fuerza a que el texto vaya al centro */
 }
 
-/* --- CUADRO DEL TEXTO INTERNO --- */
-.cuadro-texto-interno {
-    background-color: rgba(0, 0, 0, 0.7);
+/* 2. Cuadro del Nombre: Abajo del título y centrado en el medio */
+.cuadro-nombre-completo {
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 1px solid #b494ff;
     border-radius: 6px;
-    margin: 20px 5px;
+    margin: 15px 5px;
+    padding: 12px;
+    text-align: center; /* Fuerza a que tu nombre vaya al centro */
+    color: #ffffff;
+    font-size: 18px;
+}
+
+/* Contenedor en dos columnas para los elementos de abajo */
+.bloque-dos-columnas {
+    display: flex;
+    gap: 20px;
+    margin: 5px;
+}
+
+/* Columna que tira los cuadros de Títulos y Trabajos hacia la izquierda */
+.columna-izquierda-textos {
+    width: 45%; /* Toma la mitad izquierda */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Separación vertical entre ambos cuadros */
+}
+
+/* 3. Cuadro de Títulos y Carreras: Abajo a la izquierda */
+.cuadro-titulos-carreras {
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 1px solid #b494ff;
+    border-radius: 6px;
     padding: 15px;
     color: #ffffff;
+    text-align: left; /* Alineado a la izquierda */
 }
 
-/* --- CUADRO DE LAS IMÁGENES INTERNO --- */
-.cuadro-imagenes-interno {
-    background-color: rgba(0, 0, 0, 0.7);
+.cuadro-titulos-carreras h3 {
+    margin: 0 0 8px 0;
+    color: #45f3ff;
+    font-size: 16px;
+}
+
+/* 4. Cuadro de Trabajos: Abajo a la izquierda (debajo de Carreras) */
+.cuadro-trabajos {
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 1px solid #b494ff;
     border-radius: 6px;
-    margin: 5px;
     padding: 15px;
+    color: #ffffff;
+    text-align: left; /* Alineado a la izquierda */
+}
+
+.cuadro-trabajos h3 {
+    margin: 0 0 8px 0;
     color: #b494ff;
+    font-size: 16px;
+}
+
+/* Espacio en el lado derecho que queda libre para las imágenes */
+.columna-derecha-imagenes {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px dashed rgba(180, 148, 255, 0.5);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.texto-espera-imagenes {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 14px;
     text-align: center;
 }

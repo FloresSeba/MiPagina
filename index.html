@@ -10,26 +10,46 @@
 
     <!-- 1. CUADRO NEGRO COMPLETO SUPERIOR (Separador de borde a borde) -->
     <div class="barra-negra-superior"></div>
-
-    <!-- 2. CUADRO CONTENEDOR PRINCIPAL DE ABAJO -->
+    
+    <!-- 2. CUADRO GRANDE DE ABAJO (Contenedor principal) -->
     <main class="contenedor-principal-abajo">
 
         <!-- CUADRO DEL TÍTULO -->
         <header class="cuadro-titulo-interno">
-            <p class="texto-parrafo-titulo">Mi Portafolio</p>
+            <p class="texto-parrafo-titulo">Mi Portafolio de Desarrollador</p>
         </header>
 
-        <!-- CUADRO DEL TEXTO / INFORMACIÓN -->
-        <section class="cuadro-texto-interno">
-            <p>Aquí irá toda tu información personal, habilidades de desarrollo de videojuegos y textos de la tarea en el siguiente paso.</p>
+        <!-- PRIMER CUADRO DE TEXTO: NOMBRE Y APELLIDO (Debajo del título) -->
+        <section class="cuadro-nombre-completo">
+            <p><strong>Desarrollador:</strong> [Tu Nombre y Apellido Aquí]</p>
         </section>
 
-        <!-- CUADRO DE LAS IMÁGENES -->
-        <section class="cuadro-imagenes-interno">
-            <p>Espacio reservado para las imágenes del paso cinco.</p>
-        </section>
+        <!-- CONTENEDOR FLEX PARA DIVIDIR EN COLUMNAS (Izquierda textos, Derecha imágenes) -->
+        <div class="bloque-dos-columnas">
+            
+            <!-- COLUMNA IZQUIERDA (Contiene los cuadros 2 y 3) -->
+            <div class="columna-izquierda-textos">
+                
+                <!-- SEGUNDO CUADRO DE TEXTO: TÍTULOS Y CARRERAS -->
+                <section class="cuadro-titulos-carreras">
+                    <h3>Títulos & Carreras</h3>
+                    <p>[Tu Carrera o Estudios Aquí]</p>
+                </section>
+
+                <!-- TERCER CUADRO DE TEXTO: TRABAJOS -->
+                <section class="cuadro-trabajos">
+                    <h3>Experiencia Laboral</h3>
+                    <p>[Tus Trabajos o Proyectos Aquí]</p>
+                </section>
+
+            </div>
+
+            <!-- COLUMNA DERECHA (Reservada para el Paso 5: Imágenes) -->
+            <div class="columna-derecha-imagenes">
+                <p class="texto-espera-imagenes">Espacio para imágenes (Paso 5)</p>
+            </div>
+
+        </div>
 
     </main>
 
-</body>
-</html>
