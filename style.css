@@ -15,3 +15,18 @@ html {
     conic-gradient(from  -60deg at 50% calc(100%/3),var(--c1) 120deg,var(--c2) 0 240deg,var(--c3) 0);
   background-size: calc(var(--s)*sqrt(3)) var(--s);
 }
+/* Configuración física de tu recuadro blanco */
+.recuadro-blanco {
+    background-color: #ffffff; /* Color blanco de fondo */
+    color: #1c0552; /* Texto oscuro para que contraste con el blanco */
+    width: 260px; /* Ancho del recuadro */
+    min-height: 480px; /* Altura del recuadro */
+    border-radius: 14px; /* Esquinas redondeadas suaves */
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
+}
+
+/* Deja listo el espacio del lado derecho para los siguientes pasos */
+.bloque-derecho {
+    flex: 1; /* Ocupa de forma inteligente el resto de la pantalla */
+}
