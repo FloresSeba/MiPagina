@@ -1,19 +1,20 @@
 body {
-    /* Color de fondo base (azul oscuro) */
+    /* Fondo base negro azulado muy oscuro */
     background-color: #0b0c10;
 
-    /* Patrón de cubos tridimensionales corregido para el navegador */
-    background-image:
-        conic-gradient(from 120deg at 50% 25%, #2b3a4a 0deg 120deg, transparent 0deg),
-        conic-gradient(from -60deg at 50% 75%, #2b3a4a 0deg 120deg, transparent 0deg),
-        conic-gradient(from 60deg at 25% 56.25%, #1f2833 0deg 120deg, transparent 0deg),
-        conic-gradient(from -120deg at 75% 56.25%, #1f2833 0deg 120deg, transparent 0deg),
-        conic-gradient(from 0deg at 50% 37.5%, #151b24 0deg 60deg, #10141b 0deg 120deg, transparent 0deg);
+    /* Patrón de bloques 3D seguro usando linear-gradients */
+    background-image: 
+        linear-gradient(30deg, #1f2833 12%, transparent 12.5%, transparent 87%, #1f2833 87.5%, #1f2833),
+        linear-gradient(150deg, #1f2833 12%, transparent 12.5%, transparent 87%, #1f2833 87.5%, #1f2833),
+        linear-gradient(30deg, #1f2833 12%, transparent 12.5%, transparent 87%, #1f2833 87.5%, #1f2833),
+        linear-gradient(150deg, #1f2833 12%, transparent 12.5%, transparent 87%, #1f2833 87.5%, #1f2833),
+        linear-gradient(60deg, #2b3a4a 25%, transparent 25.5%, transparent 75%, #2b3a4a 75.5%, #2b3a4a),
+        linear-gradient(60deg, #2b3a4a 25%, transparent 25.5%, transparent 75%, #2b3a4a 75.5%, #2b3a4a);
     
-    /* Tamaño de los cubos (puedes subirlo a 80px 138px si los quieres más grandes) */
-    background-size: 60px 104px; 
+    background-size: 40px 70px;
+    background-position: 0 0, 0 0, 20px 35px, 20px 35px, 0 0, 20px 35px;
 
-    /* Estilos para el texto */
+    /* Estilos del texto para que no se pierdan en el fondo */
     color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
