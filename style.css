@@ -41,3 +41,13 @@ html {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); /* Sombra para que flote sobre el fondo */
     text-align: center; /* Centra los elementos que vayan adentro */
 }
+/* --- TERCER PASO: ESTILO Y COLOR DEL TEXTO --- */
+.texto-titulo-parrafo {
+    /* MODIFICA ESTE CÓDIGO PARA CAMBIAR EL COLOR: */
+    color: #45f3ff; /* Un azul neón brillante que resalta excelente sobre el fondo oscuro del cuadro */
+    
+    margin: 0;
+    font-weight: normal; /* Formato párrafo normal, sin negrita */
+    font-size: 18px; /* Tamaño ideal estilo párrafo */
+    text-align: center; /* Centrado dentro de la caja superior */
+}
