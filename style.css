@@ -119,29 +119,44 @@ body {
     font-size: 16px;
 }
 
-/* Columna Derecha (Organizador de Imágenes) */
-.columna-derecha-imagenes {
-    flex: 1;
-    background-color: rgba(0, 0, 0, 0.75); 
-    border: 1px solid #b494ff; 
-    border-radius: 6px;
-    display: flex;
-    flex-direction: column; 
+/* --- ALINEACIÓN EN COLUMNAS --- */
+
+.bloque-dos-columnas {
+    display: flex !important; /* Fuerza al navegador a usar Flexbox */
+    flex-direction: row;      /* Los elementos se alinean horizontalmente */
     gap: 20px;
-    padding: 20px;
+    margin: 15px 5px 5px 5px;
 }
 
-/* Tarjeta individual para cada imagen */
+.columna-izquierda-textos {
+    width: 48%; /* Ancho fijo para los textos */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.columna-derecha-imagenes {
+    flex: 1;    /* Toma de forma automática todo el espacio derecho restante */
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 1px solid #b494ff;
+    border-radius: 6px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .tarjeta-imagen {
     margin: 0;
     text-align: center;
+    width: 100%;
 }
 
 .tarjeta-imagen img {
     width: 100%;
+    max-width: 320px; /* Tamaño máximo para que el monito no se deforme */
     height: auto;
-    max-height: 150px;
-    object-fit: cover; 
     border-radius: 4px;
     border: 1px solid rgba(180, 148, 255, 0.4);
 }
@@ -149,5 +164,5 @@ body {
 .tarjeta-imagen figcaption {
     color: #ffffff;
     font-size: 13px;
-    margin-top: 6px;
+    margin-top: 8px;
 }

@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <!-- 1. CUADRO NEGRO COMPLETO SUPERIOR (Separador de borde a borde) -->
+    <!-- 1. CUADRO NEGRO COMPLETO SUPERIOR -->
     <div class="barra-negra-superior"></div>
     
     <!-- 2. CUADRO GRANDE DE ABAJO (Contenedor principal) -->
@@ -19,42 +19,42 @@
             <p class="texto-parrafo-titulo">Mi Portafolio de Desarrollador</p>
         </header>
 
-        <!-- PRIMER CUADRO DE TEXTO: NOMBRE Y APELLIDO (Debajo del título) -->
+        <!-- PRIMER CUADRO DE TEXTO: NOMBRE Y APELLIDO -->
         <section class="cuadro-nombre-completo">
             <p><strong>Desarrollador:</strong> Sebastián Ignacio Flores Andrades</p>
         </section>
 
-        <!-- CONTENEDOR FLEX PARA DIVIDIR EN COLUMNAS (Izquierda textos, Derecha imágenes) -->
+        <!-- EL CONTENEDOR MÁGICO: Este bloque obliga a separar la izquierda de la derecha -->
         <div class="bloque-dos-columnas">
             
-            <!-- COLUMNA IZQUIERDA (Contiene los cuadros 2 y 3) -->
+            <!-- COLUMNA IZQUIERDA (Agrupa tus dos cuadros de texto actuales) -->
             <div class="columna-izquierda-textos">
                 
-                <!-- SEGUNDO CUADRO DE TEXTO: TÍTULOS Y CARRERAS -->
+                <!-- SEGUNDO CUADRO DE TEXTO: TÍTULOS -->
                 <section class="cuadro-titulos-carreras">
                     <h3>Títulos & Carreras</h3>
-                    <p>-Título de Asistente En Geología, Tecnico De Nivel Medio
-                       -Estudiando Ingenieria En Realidad Virtual Y Diseño De Juegos Digitales
-                    </p>
+                    <p>- Título de Asistente En Geología, Técnico De Nivel Medio</p>
+                    <p>- Estudiando Ingeniería En Realidad Virtual Y Diseño De Juegos Digitales</p>
                 </section>
 
                 <!-- TERCER CUADRO DE TEXTO: TRABAJOS -->
                 <section class="cuadro-trabajos">
                     <h3>Lugar De Estudio Superior</h3>
-                    <p>-Universidad Bernardo O´Higgins</p>
+                    <p>- Universidad Bernardo O´Higgins</p>
                 </section>
-
-            <div class="columna-derecha-imagenes">
-                
-                <figure class="tarjeta-imagen">
-                    <!-- Tu GIF del mono de reojo -->
-                    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnByZDdtb2FyN2phbmx4dnY0aTVrOGM5NTB4cXNjaWJleThld245ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/H5C8CevNMbpBqNqFjl/giphy.gif" alt="Meme del mono mirando de reojo">
-                </figure>
 
             </div>
 
+            <!-- COLUMNA DERECHA (Aquí se mete el GIF para que flote a la derecha) -->
+            <div class="columna-derecha-imagenes">
+                <figure class="tarjeta-imagen">
+                    <img src="https://giphy.com" alt="Meme del mono mirando de reojo">
+                </figure>
+            </div>
 
-        </div>
+        </div> <!-- AQUÍ TERMINA EL CONTENEDOR MÁGICO -->
 
     </main>
 
+</body>
+</html>
