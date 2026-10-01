@@ -21,6 +21,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    font-family: sans-serif; /* Aplica una tipografía limpia a todo el sitio */
 }
 
 /* --- 1. CUADRO NEGRO COMPLETO ARRIBA --- */
@@ -30,12 +31,22 @@ body {
     height: 60px;
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* --- 2. CUADRO GRANDE DE ABAJO (CONTENEDOR DE FONDO RECUPERADO) --- */
+.texto-nav {
+    color: #b494ff;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* --- 2. CUADRO GRANDE DE ABAJO --- */
 .contenedor-principal-abajo {
-    background-color: rgba(28, 5, 82, 0.45); /* Base morada semitransparente */
-    border: 2px solid #b494ff; /* Borde morado neón brillante */
+    background-color: rgba(28, 5, 82, 0.65); /* Un poco más opaco para mejorar contraste */
+    border: 2px solid #b494ff; 
     border-radius: 12px;
     max-width: 1000px;
     margin: 40px auto;
@@ -44,7 +55,7 @@ body {
     box-sizing: border-box;
 }
 
-/* --- CUADRO DEL TÍTULO: Centrado --- */
+/* --- CUADRO DEL TÍTULO --- */
 .cuadro-titulo-interno {
     background-color: rgba(0, 0, 0, 0.75);
     border: 1px solid #b494ff;
@@ -55,12 +66,12 @@ body {
 }
 
 .texto-parrafo-titulo {
-    color: #45f3ff; /* Azul neón para resaltar */
-    font-size: 18px;
+    color: #45f3ff; 
+    font-size: 24px; /* Un poco más grande por ser el título principal h1 */
     margin: 0;
 }
 
-/* --- CUADRO DEL NOMBRE: Centrado --- */
+/* --- CUADRO DEL NOMBRE --- */
 .cuadro-nombre-completo {
     background-color: rgba(0, 0, 0, 0.75);
     border: 1px solid #b494ff;
@@ -72,29 +83,36 @@ body {
     font-size: 18px;
 }
 
-/* Distribución en dos columnas */
+/* --- DISTRIBUCIÓN EN DOS COLUMNAS --- */
 .bloque-dos-columnas {
     display: flex;
+    flex-direction: row;      
     gap: 20px;
     margin: 15px 5px 5px 5px;
 }
 
 /* Columna Izquierda (Textos) */
 .columna-izquierda-textos {
-    width: 45%;
+    width: 48%; 
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-/* CUADRO: Títulos y Carreras */
-.cuadro-titulos-carreras {
+/* Arreglo de color para los párrafos internos de las secciones */
+.cuadro-titulos-carreras, .cuadro-trabajos {
     background-color: rgba(0, 0, 0, 0.75);
     border: 1px solid #b494ff;
     border-radius: 6px;
     padding: 15px;
-    color: #ffffff;
+    color: #ffffff; /* Asegura texto blanco */
     text-align: left;
+}
+
+/* Fuerza a los párrafos interiores a ser completamente blancos */
+.cuadro-titulos-carreras p, .cuadro-trabajos p {
+    color: #ffffff !important;
+    margin: 8px 0;
 }
 
 .cuadro-titulos-carreras h3 {
@@ -103,40 +121,15 @@ body {
     font-size: 16px;
 }
 
-/* CUADRO: Trabajos */
-.cuadro-trabajos {
-    background-color: rgba(0, 0, 0, 0.75);
-    border: 1px solid #b494ff;
-    border-radius: 6px;
-    padding: 15px;
-    color: #ffffff;
-    text-align: left;
-}
-
 .cuadro-trabajos h3 {
     margin: 0 0 8px 0;
     color: #b494ff;
     font-size: 16px;
 }
 
-/* --- ALINEACIÓN EN COLUMNAS --- */
-
-.bloque-dos-columnas {
-    display: flex !important; /* Fuerza al navegador a usar Flexbox */
-    flex-direction: row;      /* Los elementos se alinean horizontalmente */
-    gap: 20px;
-    margin: 15px 5px 5px 5px;
-}
-
-.columna-izquierda-textos {
-    width: 48%; /* Ancho fijo para los textos */
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
+/* Columna Derecha (Imagen) */
 .columna-derecha-imagenes {
-    flex: 1;    /* Toma de forma automática todo el espacio derecho restante */
+    flex: 1;    
     background-color: rgba(0, 0, 0, 0.75);
     border: 1px solid #b494ff;
     border-radius: 6px;
@@ -155,14 +148,22 @@ body {
 
 .tarjeta-imagen img {
     width: 100%;
-    max-width: 320px; /* Tamaño máximo para que el monito no se deforme */
+    max-width: 320px; 
     height: auto;
     border-radius: 4px;
     border: 1px solid rgba(180, 148, 255, 0.4);
 }
 
-.tarjeta-imagen figcaption {
-    color: #ffffff;
+/* --- ESTILO PARA EL PIE DE PÁGINA --- */
+.pie-pagina {
+    margin-top: 25px;
+    text-align: center;
+    border-top: 1px dashed rgba(180, 148, 255, 0.4);
+    padding-top: 15px;
+}
+
+.pie-pagina p {
+    color: #b494ff;
     font-size: 13px;
-    margin-top: 8px;
+    margin: 0;
 }

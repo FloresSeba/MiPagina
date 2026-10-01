@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MiPortafolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- 1. CUADRO NEGRO COMPLETO SUPERIOR -->
-    <div class="barra-negra-superior"></div>
+    <div class="barra-negra-superior">
+        <!-- Nueva etiqueta semántica para la rúbrica -->
+        <nav class="navegacion-superior">
+            <span class="texto-nav">Portafolio Oficial de Desarrollo Web</span>
+        </nav>
+    </div>
     
     <!-- 2. CUADRO GRANDE DE ABAJO (Contenedor principal) -->
     <main class="contenedor-principal-abajo">
 
         <!-- CUADRO DEL TÍTULO -->
         <header class="cuadro-titulo-interno">
-            <p class="texto-parrafo-titulo">Mi Portafolio de Desarrollador</p>
+            <h1 class="texto-parrafo-titulo">Mi Portafolio de Desarrollador</h1>
         </header>
 
         <!-- PRIMER CUADRO DE TEXTO: NOMBRE Y APELLIDO -->
@@ -24,7 +29,7 @@
             <p><strong>Desarrollador:</strong> Sebastián Ignacio Flores Andrades</p>
         </section>
 
-        <!-- EL CONTENEDOR MÁGICO: Este bloque obliga a separar la izquierda de la derecha -->
+        <!-- EL CONTENEDOR MÁGICO: Separa la izquierda de la derecha -->
         <div class="bloque-dos-columnas">
             
             <!-- COLUMNA IZQUIERDA (Agrupa tus dos cuadros de texto actuales) -->
@@ -45,16 +50,22 @@
 
             </div>
 
-            <!-- COLUMNA DERECHA (Aquí se mete el GIF para que flote a la derecha) -->
+            <!-- COLUMNA DERECHA (Aquí está el GIF) -->
             <div class="columna-derecha-imagenes">
                 <figure class="tarjeta-imagen">
-                    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnByZDdtb2FyN2phbmx4dnY0aTVrOGM5NTB4cXNjaWJleThld245ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/H5C8CevNMbpBqNqFjl/giphy.gif" alt=>
+                    <img src="https://giphy.com" alt="Monito sorprendido">
                 </figure>
             </div>
 
         </div> <!-- AQUÍ TERMINA EL CONTENEDOR MÁGICO -->
 
+        <!-- PIE DE PÁGINA: Nueva etiqueta semántica para la rúbrica -->
+        <footer class="pie-pagina">
+            <p>&copy; 2026 - Evaluación 1 - Asignatura: Desarrollo Web</p>
+        </footer>
+
     </main>
 
 </body>
 </html>
+
